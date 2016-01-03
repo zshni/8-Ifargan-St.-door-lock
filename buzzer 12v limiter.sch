@@ -624,6 +624,91 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Capacitors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PANASONIC_H13">
+<wire x1="-6.75" y1="6.75" x2="4" y2="6.75" width="0.1016" layer="51"/>
+<wire x1="4" y1="6.75" x2="6.75" y2="4" width="0.1016" layer="51"/>
+<wire x1="6.75" y1="4" x2="6.75" y2="-4" width="0.1016" layer="51"/>
+<wire x1="6.75" y1="-4" x2="4" y2="-6.75" width="0.1016" layer="51"/>
+<wire x1="4" y1="-6.75" x2="-6.75" y2="-6.75" width="0.1016" layer="51"/>
+<wire x1="-6.75" y1="-6.75" x2="-6.75" y2="6.75" width="0.1016" layer="51"/>
+<wire x1="-6.75" y1="1" x2="-6.75" y2="6.75" width="0.2032" layer="21"/>
+<wire x1="-6.75" y1="6.75" x2="4" y2="6.75" width="0.2032" layer="21"/>
+<wire x1="4" y1="6.75" x2="6.75" y2="4" width="0.2032" layer="21"/>
+<wire x1="6.75" y1="4" x2="6.75" y2="1" width="0.2032" layer="21"/>
+<wire x1="6.75" y1="-1" x2="6.75" y2="-4" width="0.2032" layer="21"/>
+<wire x1="6.75" y1="-4" x2="4" y2="-6.75" width="0.2032" layer="21"/>
+<wire x1="4" y1="-6.75" x2="-6.75" y2="-6.75" width="0.2032" layer="21"/>
+<wire x1="-6.75" y1="-6.75" x2="-6.75" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-6.55" y1="-1.2" x2="6.45" y2="-1.2" width="0.2032" layer="21" curve="156.692742" cap="flat"/>
+<wire x1="-6.55" y1="1.2" x2="6.55" y2="1.2" width="0.2032" layer="21" curve="-156.697982" cap="flat"/>
+<wire x1="-5" y1="4.25" x2="-4.95" y2="-4.35" width="0.1016" layer="51"/>
+<circle x="0" y="0" radius="6.6" width="0.1016" layer="51"/>
+<smd name="-" x="-4.7" y="0" dx="5" dy="1.6" layer="1"/>
+<smd name="+" x="4.7" y="0" dx="5" dy="1.6" layer="1"/>
+<text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-7.55" y1="-0.45" x2="-6.6" y2="0.45" layer="51"/>
+<rectangle x1="6.6" y1="-0.45" x2="7.55" y2="0.45" layer="51"/>
+<polygon width="0.1016" layer="51">
+<vertex x="-5" y="4.2"/>
+<vertex x="-5.75" y="3.15"/>
+<vertex x="-6.25" y="2.05"/>
+<vertex x="-6.55" y="0.45"/>
+<vertex x="-6.55" y="-0.45"/>
+<vertex x="-6.35" y="-1.65"/>
+<vertex x="-5.75" y="-3.25"/>
+<vertex x="-5" y="-4.2"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="100UF-63V-20%(ELECT)" prefix="C" uservalue="yes">
+<description>CAP-08362 &lt;BR&gt;
+100uF electrolytic SMT&lt;br&gt;
+ 63V 20%</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PANASONIC_H13">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08362"/>
+<attribute name="VALUE" value="100uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -637,14 +722,15 @@ by exp-lbrs.ulp</description>
 <part name="U$1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="PTH" value="12V Zener"/>
 <part name="Q1" library="transistor-small-signal" deviceset="2N2222" device=""/>
 <part name="Q2" library="transistor-small-signal" deviceset="2N2222" device=""/>
-<part name="R1" library="adafruit" deviceset="FLIPFLOP-RES" device="" value="2K"/>
+<part name="R1" library="adafruit" deviceset="FLIPFLOP-RES" device="" value="1K"/>
 <part name="R4" library="adafruit" deviceset="FLIPFLOP-RES" device="" value="4.7K"/>
-<part name="SG1" library="buzzer" deviceset="F/SMX" device=""/>
+<part name="SG1" library="buzzer" deviceset="F/SMX" device="" value="12V Buzzer"/>
 <part name="SUPPLY1" library="ATTiny Fuse Reset with 12V Charge Pump" deviceset="GND" device=""/>
 <part name="Q3" library="transistor-pnp" deviceset="2N2907*" device="" value="2N652"/>
 <part name="R2" library="adafruit" deviceset="FLIPFLOP-RES" device="" value="470R"/>
 <part name="R3" library="adafruit" deviceset="FLIPFLOP-RES" device="" value="10K"/>
 <part name="P+1" library="ATTiny Fuse Reset with 12V Charge Pump" deviceset="VCC" device=""/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="100UF-63V-20%(ELECT)" device="" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -654,22 +740,29 @@ Since I only got 2N652 which is Germanium PNP I had to choose low value for R2. 
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="58.42" y="63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="57.9374" y="66.04" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="62.2554" y="62.738" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="56.4134" y="58.674" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="62.0014" y="58.928" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="Q1" gate="1" x="63.5" y="40.64"/>
 <instance part="Q2" gate="1" x="76.2" y="48.26"/>
-<instance part="R1" gate="G$1" x="58.42" y="73.66" rot="R90"/>
+<instance part="R1" gate="G$1" x="58.42" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="56.9214" y="72.39" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="61.722" y="72.39" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="R4" gate="G$1" x="66.04" y="83.82" rot="R90"/>
-<instance part="SG1" gate="G$1" x="78.74" y="81.28" rot="R270"/>
+<instance part="SG1" gate="G$1" x="78.74" y="81.28" smashed="yes" rot="R270">
+<attribute name="NAME" x="85.09" y="82.55" size="1.778" layer="95"/>
+<attribute name="VALUE" x="85.09" y="78.105" size="1.778" layer="96"/>
+</instance>
 <instance part="SUPPLY1" gate="GND" x="78.74" y="20.32"/>
 <instance part="Q3" gate="G$1" x="53.34" y="81.28" smashed="yes" rot="MR0">
 <attribute name="NAME" x="50.038" y="84.582" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="50.8" y="76.2" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="50.546" y="79.502" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R2" gate="G$1" x="50.8" y="33.02" rot="R90"/>
 <instance part="R3" gate="G$1" x="58.42" y="88.9" rot="R90"/>
 <instance part="P+1" gate="VCC" x="66.04" y="101.6"/>
+<instance part="C1" gate="G$1" x="71.12" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -705,12 +798,16 @@ Since I only got 2N652 which is Germanium PNP I had to choose low value for R2. 
 <segment>
 <pinref part="SG1" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="1" pin="C"/>
-<wire x1="78.74" y1="76.2" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="76.2" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="A"/>
-<wire x1="78.74" y1="58.42" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="60.96" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-<junction x="78.74" y="58.42"/>
+<wire x1="78.74" y1="55.88" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="60.96" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+<junction x="78.74" y="55.88"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="71.12" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="66.04" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+<junction x="71.12" y="55.88"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -750,7 +847,8 @@ Since I only got 2N652 which is Germanium PNP I had to choose low value for R2. 
 <wire x1="50.8" y1="86.36" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="88.9" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="96.52" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 <junction x="66.04" y="96.52"/>
@@ -759,6 +857,9 @@ Since I only got 2N652 which is Germanium PNP I had to choose low value for R2. 
 <wire x1="58.42" y1="96.52" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <junction x="58.42" y="96.52"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="71.12" y1="73.66" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
+<junction x="71.12" y="96.52"/>
 </segment>
 </net>
 </nets>
